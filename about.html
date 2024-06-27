@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us</title>
+  <style>
+    html, body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #f4f4f4;
+      height: 100%;
+    }
+    .heading {
+      text-align: center;
+      color: #4D6066;
+      margin: 0 15px;
+      font-weight: bold;
+      transition: color 0.3s;
+      padding-top:20px ;
+    }
+    .pattern-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+      height: 100px;
+      background-color: #48e5c2;
+      margin-top: 0;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 0 20px;
+    }
+    .pattern-container img {
+      height: 100px;
+      width: 100px;
+      padding: 10px;
+    }
+    .left-img {
+      margin-top: 10px;
+    }
+    .right-img {
+      margin-top: 10px;
+    }
+    nav {
+      text-align: center;
+      padding-top: 20px;
+      height: 40px;
+      background-color: #333333;
+    }
+    nav a {
+      text-decoration: none;
+      color: #ccc;
+      margin: 0 15px;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #48e5c2;
+    }
+    .grid-container {
+      display: grid;
+      grid-template-columns: 1fr auto; 
+      align-items: center;
+      text-align: center;
+      gap: 10px;
+      margin-bottom: 20px;
+      margin-top: 40px;
+    }
+    .item-1 {
+      padding-left: 80px; 
+      padding-top: 50px;
+      justify-content: center;
+      text-align: center;
+      color: rgba(0, 0, 0, 0.671);
+    }
+    .item-2 {
+      height: 350px;
+      width: auto; 
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+      padding-bottom: 40px;
+      padding-right: 70px;
+    }
+    .item-2 img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+    .content {
+      padding: 0 10px; 
+      justify-content: center;
+      text-align: center;
+      color: rgba(0, 0, 0, 0.671);
+    }
+    .animated-text-container {
+      position: absolute;
+      text-align: center;
+      white-space: nowrap;
+      overflow: hidden;
+      width: calc(100% - 160px);
+    }
+    .animated-text {
+      font-size: 24px;
+      color: #4D6066;
+      font-weight: bold;
+      display: inline-block;
+      animation: moveText 10s linear infinite;
+    }
+    
+    @keyframes moveText {
+  0% {
+    transform: translateY(70%);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10%);
+  }
+}
+
+  </style>
+</head>
+<body>
+  <div class="pattern-container">
+    <div class="left-img"><img style="height: 140px;width: 140px;" src="image/pak.png" alt="Left Image"></div>
+    <div class="animated-text-container">
+      <div class="animated-text">Explore Pak  City.com </div>
+    </div>
+    <div class="right-img"><img style="height: 60px;width: 60px;" src="image/OIP.png" alt="Right Image"></div>
+  </div>
+  <nav>
+    <a href="/index.html">Home</a>
+    <a href="/about.html">About</a>
+    <a href="/contactus.html">Contact</a>
+  </nav>
+  <h1  class="heading"> Welcome to Explore Pak Cities.com</h1>
+  <div class="grid-container">
+    <div class="item-1">
+      <h2 class="content">ExplorePakCities.com is your go-to source for <br> discovering the wonders of Pakistan's cities. Passionate <br> about exploration and culture, we offer city guides, travel tips, and cultural insights.</h2>
+    </div>
+    <div class="item-2">
+      <img src="https://ontheworldmap.com/pakistan/large-detailed-map-of-pakistan-with-cities-and-towns.jpg" alt="Map Image">
+    </div>
+  </div>
+</body>
+</html>
